@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS task 2</title>
+</head>
+<h1>Here is The 3rd Task of JavaScript </h1>
+<body style="text-align: center;">
+    <script>
+        // Test data which is given 
+        const DolphinScore = [96,108,89];
+        const KoalasScore  = [88,91,110 ];
+
+        // Team's Average score caculation 
+
+       const DolphinAvgScore=DolphinScore.reduce((p,c)=>p+c,0) /DolphinScore.length;
+       document.write(`Average Score Value of the Dolphin score is (${ DolphinAvgScore})<br>`);
+
+       const KoalasAvgScore=KoalasScore.reduce((p,c)=>p+c,0) /KoalasScore.length;
+       document.write(`Average Score Value of the Koalas score is (${ KoalasAvgScore})<br><br>`);
+
+    //    comparing the averages score of both team 
+    if(DolphinAvgScore > KoalasAvgScore )
+    {
+        document.write( `Hurrah!! Dolphin Team Won The Battle.<br><br> `)
+    }
+    else if( KoalasAvgScore > DolphinAvgScore )
+    {
+        document.write( `Hurrah!!! Koalas Team Won The Battle. `)
+   
+    }
+    else if( KoalasAvgScore === DolphinAvgScore) 
+    {
+       document.write(`Match Draw!!!`)
+    }
+    
+    // Data Of bonus 1
+    document.write("<h1>Here Is The Average Value Of the bonus 1  </h1>")
+    const DolphinsScore=[97,112,101];
+    const KoalassScore=[109,95,123];
+
+    const AvgScoreDolphins=DolphinsScore.reduce((p,c)=>p+c,0)/DolphinsScore.length;
+    const AvgScoreKoalass=KoalassScore.reduce((p,c)=>p+c,0)/KoalassScore.length;
+    // average of bonus 1
+    document.write(`Dolphins's Average Score is (${AvgScoreDolphins})<br>`);
+    document.write(`Koalas's Average Score is (${ AvgScoreKoalass})<br> <br>`);
+
+    // comparing averages score of both teams 
+    if(AvgScoreDolphins > AvgScoreKoalass &&  AvgScoreDolphins >= 100)
+    {
+      document.write("Dolphin Team Won The Trophy");
+    }
+    else if (AvgScoreKoalass > AvgScoreDolphins && AvgScoreKoalass>=100)
+    {
+        document.write("Hurrah!! Koalas Team Won the Trophy.")
+
+    }
+    else if(AvgScoreKoalass===AvgScoreDolphins && AvgScoreKoalass>=100 && AvgScoreDolphins>=100)
+    {
+        document.write("Match Is Draw!!!!");
+    }
+    else
+    {
+        document.write("No Team Won The Match ");
+    }
+
+// Data of BoNus 2
+document.write("<h1>Here Is The Average Value Of the bonus 2  </h1>")
+    const DolphinsScore2=[97,112,101];
+    const KoalassScore2=[109,95,106];
+//   Average of Bonus 2 data
+    const AvgScoreDolphins2=DolphinsScore2.reduce((p,c)=>p+c,0)/DolphinsScore.length;
+    const AvgScoreKoalass2=KoalassScore2.reduce((p,c)=>p+c,0)/KoalassScore.length;
+
+    document.write(`Dolphins's Average Score is (${AvgScoreDolphins2})<br>`);
+    document.write(`Koalas's Average Score is (${ AvgScoreKoalass2})<br> <br>`);
+
+     // comparing averages score of both teams 
+     if(AvgScoreDolphins2 > AvgScoreKoalass2 &&  AvgScoreDolphins2 >= 100)
+    {
+      document.write("Dolphin Team Won The Trophy");
+    }
+    else if (AvgScoreKoalass2 > AvgScoreDolphins2 && AvgScoreKoalass2>=100)
+    {
+        document.write("Hurrah!! Koalas Team Won the Trophy.")
+
+    }
+    else if(AvgScoreKoalass2===AvgScoreDolphins2 && AvgScoreKoalass2>=100 && AvgScoreDolphins2>=100)
+    {
+        document.write("Match Is Draw!!!!");
+    }
+    else
+    {
+        document.write("No Team Won The Match ");
+    }
+
+    </script>
+</body>
+</html>

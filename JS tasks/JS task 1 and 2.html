@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Task 1 and 2</title>
+</head><h1 style="text-align: center; padding: 20px;">Task No 1: Calculate The BMI <br><br><BR></h1>
+<body style="text-align: center;">
+
+    <script>
+//   record no 1  
+  const MarkWeight = 78;
+  const MarkH = 1.69;
+
+  const JohnWeight = 92;
+  const JohnHeight = 1.95;
+
+//   record no 2
+const MarkWeight2 = 95;
+const MarkH2 = 1.88;
+
+const JohnWeight2 = 85;
+const JohnHeight2 = 1.76;
+
+// formula of 1st BMI
+const MarkBmi = MarkWeight / (MarkH**2);
+const JohnBmi = JohnWeight / (JohnHeight**2);
+
+// formula of 2nd BMI
+const MarkBmi2 = MarkWeight2 / (MarkH2**2);
+const JohnBmi2 = JohnWeight2 / (JohnHeight2**2);
+
+// calucalations are start from here
+
+document.write(`<h2>Here Is the Result Of the 1st caculation!!</h2>`);
+
+  if(MarkBmi > JohnBmi)
+  {
+    document.write(`Mark BMI (${MarkBmi}) is greater than the Jhon BMI (${JohnBmi})`);
+  }
+  else
+  {
+    document.write(`Mark BMI (${JohnBmi}) is greater than the Mark BMI(${MarkBmi})`);
+  }
+
+
+ document.write(`<h2>Here is the Result of 2nd BMI calculation!!</h1>`)
+
+
+  if(MarkBmi2 > JohnBmi2)
+  {
+    document.write(`Mark BMI (${MarkBmi2}) is greater than the Jhon BMI (${JohnBmi2})`);
+  }
+  else
+  {
+    document.write(`Jhon BMI (${JohnBmi2}) is greater than the Mark BMI (${MarkBmi2})`);
+  }
+    </script>         
+</body>
+</html>
